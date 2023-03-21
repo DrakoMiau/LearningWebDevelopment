@@ -1,0 +1,10 @@
+h1{
+    font-size: 400px;
+}
+body{
+    background-color: dodgerblue;
+    color: cornsilk;
+    background-image: url("/img/fondoCSS.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}

@@ -1,0 +1,16 @@
+ol{
+    list-style: none;
+    counter-reset: contador; /*se resetea el contador cada vez que creamos una nueva lista*/
+}
+
+ol li{
+    counter-increment: contador; /*incrementa el contador cada vez que agregamos un nuevo item*/
+}
+
+ol li::before{
+    content: 'Alimento ' counter(contador) ') ';
+}
+
+ol li::after{
+    content: '.';
+}

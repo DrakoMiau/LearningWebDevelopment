@@ -1,0 +1,43 @@
+body{
+    background-image: url("/images/aesteril.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.centrar{
+    text-align: center;
+    margin: auto;
+}
+.bordear_casilla td{
+    border: 2px solid rgb(37, 3, 33);
+}
+td{
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.13);
+    color: rgba(241, 235, 241, 0.692);
+    font-family: cursive;
+    font-size: 20px;
+    backdrop-filter: blur(4px);
+    text-shadow: 7px 7px 5px #00000052;
+}
+h1{
+    margin-bottom: 80px;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.658);
+}
+section{
+    margin-top: 40px;
+}
+table{
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    padding: 20px ;
+    box-shadow: inset 10px 20px 40px 40px #4b0e3c50;
+}
+th{
+    color: rgb(204, 158, 167);
+    font-size: 20px;
+    text-shadow: 4px 4px 5px rgba(92, 25, 56, 0.308);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

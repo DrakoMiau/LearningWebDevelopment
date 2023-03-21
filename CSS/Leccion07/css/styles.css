@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+/*div{
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid firebrick;
+    tener en cuenta que para que aplique el margin: auto; es necesario que exista un ancho
+}
+*/
+div.estatico{
+    position: static;
+    top: 10px;
+    padding: 15px;
+    border: 3px soldi greenyellow;
+    background-color: whitesmoke;
+}
+div.relativo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+}
+div.absoluto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+}
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;
+    margin: auto;
+    /*overflow: visible;  propiedad por default de overflow*/
+    /*overflow: hidden; propiedad para que se oculte el contenido desbordado*/
+    /*overflow: scroll; se crea un scroll para el texto que se desborda*/
+    overflow: auto;
+    /*overflow-x: auto;*/
+    /*overflow-y: auto;*/
+}
+div.contenedor2{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;
+    /*overflow: visible;  propiedad por default de overflow*/
+    /*overflow: hidden; propiedad para que se oculte el contenido desbordado*/
+    /*overflow: scroll; se crea un scroll para el texto que se desborda*/
+    overflow: auto;
+    /*overflow-x: auto;*/
+    /*overflow-y: auto;*/
+    float: left;
+}
+div.contenedor.flotado{
+    float: left;
+}
+div.contenedor.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+.menu{
+    list-style: none;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: #e63946;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: #f1faee;
+}

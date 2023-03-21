@@ -1,0 +1,60 @@
+/*Selector universal*/
+*{
+    background-color: blanchedalmond;
+}
+#titulo {
+    color: crimson;
+    text-align: center;
+}
+/*La unica restriccion es que no puede iniciar con numeros*/
+.centrar {
+    text-align: center;
+}
+.texto_grande {
+    font-size: 20px;
+}
+.centrar-div{
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, div{
+    color: rgba(121, 71, 36, 0.781);
+}
+.boton{
+    width: 200px;
+    padding: 15px;
+    border: 5px solid rgb(32, 9, 63);
+    background-color: #456b9d;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/*subclases*/
+
+p.centrar{
+    text-align: center; /*Notemos que tenemos dos filtros a los cuales se van a aplicar estos estilos, primero son los elementos de tipo parrafo segundo son los elementos que esten utilizando la clase mencionada*/
+    color: brown;
+}
+
+/*clases para pruebas de bordes*/
+
+.rojo{
+    border: 10px solid firebrick;
+    border-radius: 10px;
+}
+.rosa{
+    border: 10px dashed rgb(255, 105, 180);
+}
+.amarillo{
+    border: 10px double gold;
+}
+.azul{
+    border: 10px dotted turquoise;
+}
+.punteado{
+    border-style: dashed; /*borde discontinuo*/
+}
+
