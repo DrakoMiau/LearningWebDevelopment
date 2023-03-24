@@ -30,7 +30,7 @@ class Persona {
     }
     set edad(edad){
         this._edad = edad;
-    }
+    } 
     
     //metodo toString
     toString(){
@@ -88,6 +88,7 @@ let cliente1 = new Cliente('Jair', 'Garzon', 19);
 console.log(empleado1)
 console.log(Persona.contadorPersonas);
 console.log(empleado1.toString());
+console.log(persona1.toString())
 console.log(persona1);
 console.log(cliente1.toString())
 
