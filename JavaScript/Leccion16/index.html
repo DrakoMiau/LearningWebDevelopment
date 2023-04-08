@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo Formulario con JavaScript</title>
+    <title>Manejo DOM con JavaScript</title>
     <!-- <style>
         .azul{
             color: blue;
@@ -10,24 +10,36 @@
     </style> -->
 </head>
 <body>
-    <form id="formulario">
-        Nombre: <input type="text" namme="nombre" value="Juan"/>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br/>
+    <img id="imagen" src="images/Todoroki_Kun.jpg" style="width: 30%;"/>
+    <script>
+        function mostrar(){
+            document.getElementById('imagen').src = '/images/algoritmo-696x392.jpg'
+        }
+    </script>
+    <!-- <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan"/>
         <br/>
         Apellido: <input type="text" name="apellido" value="Perez"/>
         </br>
     </form>
     <button onclick="mostrarValores()">Mostrar</button>
-    <div id="valores"></div>
-    <script>
+    <div id="valores"></div> -->
+    <!-- <script>
         function mostrarValores(){
             let formulario = document.forms['formulario'];
             let texto = '';
-            for(let elemento of formulario){
-                texto += elemento.value + '</br>';
-            }
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            texto = nombre.value + '<br/>' + apellido.value;
+            // for(let elemento of formulario){
+            //     texto += elemento.value + '</br>';
+            // }
             document.getElementById('valores').innerHTML = texto;
         }
-    </script>
+    </script> -->
 
 
     <!-- <h1 id="cabecero" class="azul">Ejemplo DOM con JavaScript</h1>
