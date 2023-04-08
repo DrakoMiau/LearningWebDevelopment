@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Formulario con JavaScript</title>
+    <!-- <style>
+        .azul{
+            color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <form id="formulario">
+        Nombre: <input type="text" namme="nombre" value="Juan"/>
+        <br/>
+        Apellido: <input type="text" name="apellido" value="Perez"/>
+        </br>
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+            let formulario = document.forms['formulario'];
+            let texto = '';
+            for(let elemento of formulario){
+                texto += elemento.value + '</br>';
+            }
+            document.getElementById('valores').innerHTML = texto;
+        }
+    </script>
+
+
+    <!-- <h1 id="cabecero" class="azul">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo1" class="azul">Saludos!</p>
+    <p id="parrafo2" class="azul">Otro parrafo</p> -->
+
+    <!--es script de js debe estar siempre despues de todos los elementos html-->
+<!-- <script>
+    // let parrafos = document.getElementsByClassName('azul');  //devuelve un arreglo
+    // console.log(`No. elementos: ${parrafos.length}`);
+    // for (let elemento of parrafos) {
+    //     console.log(elemento.innerHTML)
+    // }
+
+    // tambien tenemos el metodo query selctor, en el cual le especificamos la clase y el tipo de elemento html que queremos manejar
+
+    let elementos = document.querySelectorAll('h1.azul'); // los parrafos con la clase azul
+    console.log(`No. elementos: ${elementos.length}`);
+    for (let elemento of elementos) {
+        console.log(elemento.innerHTML);
+    }
+    // let cabecero = document.getElementById('cabecero');
+    // let parrafo = document.getElementById('parrafo');
+    // console.log(`Texto del parrafo: ${parrafo.innerHTML}`);
+    // console.log(`Texto del cabecero: ${cabecero.innerHTML}`);
+    // console.log('Saludos desde JavaScript');
+    // parrafo.innerHTML = 'Nuevo valor del parrafo';
+    // cabecero.innerHTML = 'Nuevo valor del cabecero';
+</script>-->
+</body>
+</html>
